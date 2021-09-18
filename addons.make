@@ -1,0 +1,4 @@
+ofxEasing
+ofxNanoVG
+ofxSvg
+ofxTrueTypeFontUC
