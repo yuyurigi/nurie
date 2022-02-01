@@ -217,6 +217,7 @@ void ofApp::setNanoVG(){ //"ぬりえ"の文字とイラストを描く
             for (int k = 0; k < polylines[j].size(); k++){
                 if(k == 0) c.moveTo(polylines[j][k].x, polylines[j][k].y);
                 else c.lineTo(polylines[j][k].x, polylines[j][k].y);
+		if (k == polylines[j].size()-1) c.lineTo(polylines[j][0].x, polylines[j][0].y);
             }
         }
         c.strokePath();
